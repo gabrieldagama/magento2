@@ -8,10 +8,10 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
     <group id="engcom_crongroup">
         <job name="engcomtest_product" instance="Magento\EngcomTest\Cron\ProductCron" method="execute">
-            <schedule>* * * * *</schedule>
+            <schedule>*/10 * * * *</schedule>
         </job>
         <job name="engcomtest_inventory" instance="Magento\EngcomTest\Cron\InventoryCron" method="execute">
-            <schedule>* * * * *</schedule>
+            <schedule>*/10 * * * *</schedule>
         </job>
     </group>
 </config>
